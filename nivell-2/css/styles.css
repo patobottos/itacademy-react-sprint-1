@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header background image */
+header {
+    background-image: url("/nivell-2/images/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+}
+
+/* Resetting link styles */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/* NAVIGATION MENU */
+nav {
+    color: #808080;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar * {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 0.4rem;
+}
+
+.logo {
+    background-image: url("/nivell-2/images/logo.png");
+    height: 4.5rem;
+    width: 4.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 1rem;
+}
+
+.menu-icons {
+    min-width: 60%;
+}
+
+.menu-icons li a,
+.social-media li a {
+    color: #808080;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.fa-solid,
+.fa-brands {
+    color: #808080;
+}
+
+.social-media {
+    justify-content: flex-end;
+}
+
+/* Slogan */
+.slogan {
+    margin: 0 auto;
+    margin-top: 7rem;
+    max-width: 90%;
+    min-height: 150px;
+    padding-top: 2rem;
+    text-align: center;
+    color: #f2a285;
+    font-family: Garamond, serif;
+    font-size: 2rem;
+    background-color: rgba(128, 128, 128, 0.15);
+}
+
+/*  Nav Menu - Transitions and animations */
+.menu-icons li a:hover,
+.social-media li a:hover {
+    border-bottom: 1px solid #333333;
+    color: rgb(128, 128, 128);
+    background-color: rgba(128, 128, 128, 0.15);
+}
+
+
