@@ -135,8 +135,8 @@ main {
 .article-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   gap: 15px;
+    align-items: stretch;
+    gap: 15px;
 }
 
 .aside-title,
@@ -151,10 +151,6 @@ main {
 .article-d {
     border: 10px solid #f5f1f1;
     background-color: #f5f1f1;
-}
-
-.main-footer {
-    flex: 1 1 99%;
 }
 
 .article-title {
