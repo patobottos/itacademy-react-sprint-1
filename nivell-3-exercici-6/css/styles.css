@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header background image */
+header {
+    background-image: url("/nivell-3-exercici-6/images/header.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 250px;
+}
+
+/* Resetting link styles */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* NAVIGATION MENU */
+
+.nav-bar {
+    margin: 10px;
+    color: #808080;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    width: 50px;
+    /* Aplying animation */
+    animation: pendulum 2s;
+}
+
+.menu-icons {
+    display: flex;
+    flex-direction: row;
+    min-width: 20%;
+    gap: 1.5rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.logo,
+.menu-icons li a,
+.social-media li a {
+    color: #808080;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+/* Slogan */
+.slogan {
+    margin: 0 auto;
+    margin-top: 9rem;
+    max-width: 90%;
+    min-height: 150px;
+    padding-top: 2rem;
+    text-align: center;
+    color: #d28f77;
+    font-family: Garamond, serif;
+    font-size: 2rem;
+    background-color: rgba(128, 128, 128, 0.15);
+    animation: fade-in 3s, spread 3.5s;
+    animation-fill-mode: forwards;
+}
+
+/*  Nav Menu - Transitions and animations */
+.logo:hover,
+.menu-icons li a:hover,
+.social-media li a:hover {
+    border-bottom: 1px solid #333333;
+    color: rgb(128, 128, 128);
+    background-color: rgba(128, 128, 128, 0.15);
+}
+
+/* ARTICLES SECTION */
+
+main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-articles,
+.main-aside {
+    border: 10px solid #d8d7d7;
+    background-color: #d8d7d7;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.aside-title,
+.aside-content {
+    margin: 10px;
+    text-align: center;
+}
+
+.article-a,
+.article-b,
+.article-c,
+.article-d {
+    border: 10px solid #f5f1f1;
+    background-color: #f5f1f1;
+}
+
+.article-title {
+    color: #f9eae2;
+    background-color: #f08080;
+    font-family: 'Roboto Mono', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 10px 10px 0.2rem 0.5rem;
+}
+
+.article-text {
+    color: #565656;
+    padding-top: 10px;
+    column-count: 2;
+    column-gap: 0.9rem;
+}
+
+.article-illustration {
+    position: relative;
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.article-picture {
+    flex-grow: 1;
+}
+
+.date {
+    color: #ecdf8b;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#read-more-1,
+#read-more-2,
+#read-more-3,
+#read-more-4 {
+    color: #828282;
+}
+
+.main-foot {
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 10px 0px;
+    height: 3rem;
+    background-color: #f5f1f1;
+    border-left: 10px solid #d8d7d7;
+    border-right: 10px solid #d8d7d7;
+    max-width: 100%;
+}
+
+.footer-text {
+    color: #8b8989;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+    0% { opacity: 0;}
+    100%  {opacity: 1;}
+}
+
+@keyframes spread {
+    0% {letter-spacing: 0;}
+    50% {letter-spacing: 0.07;}
+    70% {letter-spacing: 0.08;}
+    100% {letter-spacing: 0.09rem;}
+}
+
+@keyframes pendulum {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    14% {
+        transform: translateX(80px);
+    }
+
+    28% {
+        transform: translateX(-40px);
+    }
+
+    40% {
+        transform: translateX(40px);
+    }
+
+    52% {
+        transform: translateX(-20px);
+    }
+
+    63% {
+        transform: translateX(20px);
+    }
+
+    73% {
+        transform: translateX(-10px);
+    }
+
+    81% {
+        transform: translateX(10px);
+    }
+
+    89% {
+        transform: translateX(-5px);
+    }
+
+    95% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+/* LAYOUT FOR TABLETS */
+/* Devices width between: 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .nav-bar {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 11vw;
+        position: relative;
+        top: 2rem;
+    }
+
+    .menu-icons {
+        display: flex;
+        gap: 3vw;
+    }
+
+    .article-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .article-a, .article-b, .article-c, .article-d {
+        flex-basis: 49%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+/* LAYOUT FOR DESKTOPS */
+/* Devices with larger than 1024px */
+
+@media screen and (min-width: 1024px) {
+
+    .nav-bar {        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 11vw;
+        position: relative;
+        top: 2rem;
+    }
+
+    .menu-icons {
+        display: flex;
+        gap: 3vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .article-a, .article-b, .article-c, .article-d {
+        flex-basis: 49%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .main-articles {
+        flex-basis: 80%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .main-aside {
+        flex-basis: 20%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
