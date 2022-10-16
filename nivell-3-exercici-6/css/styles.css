@@ -316,7 +316,7 @@ footer {
 }
 
 /* LAYOUT FOR DESKTOPS */
-/* Devices with larger than 1024px */
+/* Devices width larger than 1024px */
 
 @media screen and (min-width: 1024px) {
 
