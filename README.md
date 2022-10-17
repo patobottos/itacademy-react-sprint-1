@@ -14,8 +14,8 @@ Lliurament de l'sprint 1 de l'Itinerari de React de la IT Academy.
   - Exercici 1
   - Exercici 2
   - Exercici 3
-- Nivell 2
   - Exercici 4
+- Nivell 2
   - Exercici 5
 - Nivell 3
   - Exercici 6
